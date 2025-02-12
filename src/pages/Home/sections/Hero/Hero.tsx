@@ -13,10 +13,10 @@ const Hero = () => {
         height: "100vh",
         display: "flex",
         alignItems: "center",
-        [theme.breakpoints.up('xs')] : { // <= mobile
+        [theme.breakpoints.up('xs')]: { // <= mobile
             paddingTop: "100px"
         },
-        [theme.breakpoints.up('md')] : { // >= mobile
+        [theme.breakpoints.up('md')]: { // >= mobile
             paddingTop: "0",
         }
 
@@ -35,7 +35,7 @@ const Hero = () => {
                     <Grid item xs={12} md={5}>
                         <Box position="relative">
                             <Box position="absolute" width={"150%"} top={-100} right={0} >
-                                <AnimatedBackground/>
+                                <AnimatedBackground />
                             </Box>
                             <Box position="relative" textAlign="center" >
                                 <StyledImage src={myPhoto} alt="My Photo" />
@@ -44,11 +44,11 @@ const Hero = () => {
 
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        <Typography color="primary.constrastText" variant="h1" textAlign="center" pb={2}>Arlindo Junior</Typography>
-                        <Typography color="primary.constrastText" variant="h2" textAlign="center">I´m a Software Engineer</Typography>
+                        <Typography color="white" variant="h1" textAlign="center" pb={2}>Arlindo Junior</Typography>
+                        <Typography color="white" variant="h2" textAlign="center">I´m a Software Engineer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={() => console.log("Download CV")}>
                                     <DownloadIcon />
                                     <Typography>
                                         Download CV
@@ -56,7 +56,7 @@ const Hero = () => {
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={() => console.log("Contact me")}>
                                     <MailOutlineIcon />
                                     <Typography>
                                         Contact me
