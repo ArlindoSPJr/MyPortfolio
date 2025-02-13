@@ -1,4 +1,5 @@
-import { Container, Grid, styled, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, styled, Typography } from "@mui/material";
+import SchoolIcon from '@mui/icons-material/School';
 
 const About = () => {
 
@@ -9,10 +10,10 @@ const About = () => {
         alignItems: "center",
         justifyContent: "center",
         [theme.breakpoints.up('xs')]: { // <= mobile
-            paddingTop: "50px"
+            paddingTop: "180px"
         },
         [theme.breakpoints.up('md')]: { // >= mobile
-            paddingTop: "0",
+            paddingTop: "30",
         }
 
     }));
@@ -24,33 +25,89 @@ const About = () => {
                     spacing={2}
                     justifyContent="center"
                     alignItems="center"
-                    style={{ minHeight: '50vh' }}>
+                    style={{ minHeight: '20vh' }}>
 
                     <Grid item xs={12} md={7}>
-                        <Typography color="primary.contentTest"
+                        <Typography
+                            color="primary.contentTest"
                             variant="h2"
                             textAlign="center"
                             sx={{
                                 marginBottom: "20px",
-                                paddingTop: "20px"
+                                paddingTop: {
+                                    xs: "190px",  // Somente para telefones
+                                    md: "0px"    // Para dispositivos maiores que 'md'
+                                }
                             }}
                         >
-                            About me</Typography>
+                            About me
+                        </Typography>
                     </Grid>
+
                 </Grid>
                 <Grid container
                     spacing={2}
                     justifyContent="center"
                     alignItems="center"
-                    gap={10}
-                    >
-                        <Grid display="flex" justifyContent="center">
-                            oi
-                        </Grid>
-                        <Grid>
-                            oi
+                    gap={3}
+                    display="flex"
+                    flexDirection="column"
+                    marginBottom={40}
+                >
+                    <Box display="flex" justifyContent="center" border="1px solid #aaaaaa "
+                        padding={2} width={200} height={90} alignItems="center"
+                        flexDirection="column" >
+                        <SchoolIcon />
+                        <Typography color="black" variant="h5" textAlign="center">
+                            Education
+                        </Typography>
+                        <Typography color="black" variant="h6" textAlign="center">
+                            Software Engineer
+                        </Typography>
+                    </Box>
+
+                    <Typography color="black" fontSize="20px" sx={{ textAlign: "justify" }} >
+                        Sou Arlindo, estudante de Engenharia de Software na PUC Minas, apaixonado por tecnologia
+                        e desenvolvimento de soluções criativas. Possuo experiência e conhecimento em
+                        Java, JavaScript, HTML, CSS, Spring Framework e Banco de dados, com um forte foco em criar aplicações eficientes e funcionais.
+                    </Typography>
+                    <Divider sx={{ width: '100%', margin: '10px auto', color: "black", background: "black" }} />
+                    <Grid item xs={12} md={12} textAlign="center">
+                        <Typography
+                            color="primary.contentTest"
+                            variant="h2"
+                            textAlign="center"
+                            sx={{
+                                paddingTop: {
+                                    xs: "130px",  // Somente para telefones
+                                    md: "0px"    // Para dispositivos maiores que 'md'
+                                }
+                            }}
+                        >
+                            Skills
+                        </Typography>
+                        <Grid container justifyContent="center" gap={2} sx={{ flexWrap: 'nowrap', overflowX: 'auto' }} marginTop="20px">
+                            <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
+                                Java
+                            </Box>
+                            <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
+                                Spring
+                            </Box>
+                            <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
+                                MySQL
+                            </Box>
+                            <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
+                                HTML
+                            </Box>
+                            <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
+                                CSS
+                            </Box>
+                            <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
+                                React
+                            </Box>
                         </Grid>
                     </Grid>
+                </Grid>
             </Container>
         </StyledAbout >
     )
