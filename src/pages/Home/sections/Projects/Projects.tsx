@@ -1,5 +1,7 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Grid, styled, Typography } from "@mui/material";
 import healthsync from "../../../../assets/images/healthsync.png";
+import spotifyLogo from "../../../../assets/images/spotifyLogo.jpg";
+import soccerGameLogo from "../../../../assets/images/soccerGamerLogo.jpg";
 
 const Projects = () => {
     const StyledProjects = styled("div")(({ theme }) => ({
@@ -28,6 +30,8 @@ const Projects = () => {
 
                     {/** Aqui começam os Cards */}
                     <Grid container spacing={4} justifyContent="center" marginTop={3} >
+
+                        {/** Card HealthSync */}
                         <Grid item xs={12} sm={6} md={4}>
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardActionArea>
@@ -42,8 +46,7 @@ const Projects = () => {
                                             HealthSync
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                        O projeto HealthSync é um software desenvolvido para otimizar a eficiência operacional e a qualidade de atendimento em clínicas de saúde.
-                                        </Typography>
+                                        The HealthSync project is software developed to optimize operational efficiency and quality of care in health clinics.</Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
@@ -53,31 +56,55 @@ const Projects = () => {
                                 </CardActions>
                             </Card>
                         </Grid>
-
+                        
+                        {/** Card Spotify */}
                         <Grid item xs={12} sm={6} md={4}>
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
                                         height="140"
-                                        image="https://via.placeholder.com/300x140"
+                                        image={spotifyLogo}
                                         alt="Imagem do Projeto"
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="div">
-                                            Projeto 2
+                                        SpotifyAPI-SpringOpenFeign
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            Outro projeto interessante. Descobre mais detalhes!
+                                        In this project we will consume a Spotify Rest API within Java using Spring Boot and its dependency Spriong Cloud Open Feign
                                         </Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary">
+                                    <Button size="small" color="primary" href="https://github.com/ArlindoSPJr/SpotifyAPI-SpringOpenFeign" target="_blank">
                                         Share
                                     </Button>
-                                    <Button size="small" color="primary">
-                                        Learn More
+                                </CardActions>
+                            </Card>
+                        </Grid>
+
+                        {/** Card SoccerGame */}
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Card sx={{ maxWidth: 345 }}>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image={soccerGameLogo}
+                                        alt="Imagem do Projeto"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                        SoccerGame
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                        Soccer Game is software where you can create matches, add players and view their statistics, as well as organize championships</Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" color="primary" href="https://github.com/ArlindoSPJr/SoccerGame" target="_blank">
+                                        Share (Em Andamento)
                                     </Button>
                                 </CardActions>
                             </Card>
