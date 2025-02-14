@@ -16,7 +16,7 @@ const Projects = () => {
 
 
     return (
-        <StyledProjects>
+        <StyledProjects id="projects">
             <Container maxWidth="lg">
                 <Grid container justifyContent="center" spacing={4} marginBottom={4}>
                     <Grid item xs={12} textAlign="center">

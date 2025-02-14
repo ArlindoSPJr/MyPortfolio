@@ -1,7 +1,7 @@
 import { AppBar, MenuItem, Toolbar, styled } from "@mui/material"
 
 const NavBar = () => {
-
+    
     const StyledToobar = styled(Toolbar)(() => ({
         display: "flex",
         justifyContent: "space-evenly",
@@ -12,9 +12,8 @@ const NavBar = () => {
         <>
             <AppBar position="absolute">
                 <StyledToobar>
-                    <MenuItem>About</MenuItem>
-                    <MenuItem>Skills</MenuItem>
-                    <MenuItem>Projects</MenuItem>
+                    <MenuItem onClick={() => window.location.href = '#about'}>About</MenuItem>
+                    <MenuItem onClick={() => window.location.href = '#projects'}>Projects</MenuItem>
                 </StyledToobar>
             </AppBar>
         </>
