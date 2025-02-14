@@ -49,7 +49,7 @@ const Hero = () => {
                         <Typography color="white" variant="h2" textAlign="center">I´m a Software Engineer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => window.open('../../../../../public/Curriculo.pdf', '_blank')} >
+                                <StyledButton onClick={() => window.open('../../../../../Curriculo.pdf', '_blank')} >
                                     <DownloadIcon />
                                     <Typography>
                                         Download CV
