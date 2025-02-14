@@ -2,9 +2,9 @@ import { Box, Container, styled, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import myPhoto from "../../../../assets/images/myPhoto.png";
 import DownloadIcon from '@mui/icons-material/Download';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 
@@ -49,7 +49,7 @@ const Hero = () => {
                         <Typography color="white" variant="h2" textAlign="center">I´m a Software Engineer</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("Download CV")}>
+                                <StyledButton onClick={() => window.open('../../../../../public/Curriculo.pdf', '_blank')} >
                                     <DownloadIcon />
                                     <Typography>
                                         Download CV
@@ -57,10 +57,10 @@ const Hero = () => {
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => console.log("Contact me")}>
-                                    <MailOutlineIcon />
+                                <StyledButton onClick={() => window.open('https://www.linkedin.com/in/arlindo-j%C3%BAnior-904714230/', '_blank')}>
+                                    <LinkedInIcon />
                                     <Typography>
-                                        Contact me
+                                        Linkedin
                                     </Typography>
                                 </StyledButton>
                             </Grid>
