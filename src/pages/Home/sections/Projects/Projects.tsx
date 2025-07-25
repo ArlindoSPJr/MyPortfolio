@@ -1,7 +1,7 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Grid, styled, Typography } from "@mui/material";
 import healthsync from "../../../../assets/images/healthsync.png";
 import spotifyLogo from "../../../../assets/images/spotifyLogo.jpg";
-import soccerGameLogo from "../../../../assets/images/soccerGamerLogo.jpg";
+import mp from "../../../../assets/images/mp.png";
 
 const Projects = () => {
     const StyledProjects = styled("div")(({ theme }) => ({
@@ -18,7 +18,7 @@ const Projects = () => {
     return (
         <StyledProjects id="projects">
             <Container maxWidth="lg">
-                <Grid container justifyContent="center" spacing={4} marginBottom={4}>
+                <Grid container justifyContent="center">
                     <Grid item xs={12} textAlign="center">
                         <Typography
                             color="white"
@@ -28,8 +28,14 @@ const Projects = () => {
                         </Typography>
                     </Grid>
 
-                    {/** Aqui começam os Cards */}
-                    <Grid container spacing={4} justifyContent="center" marginTop={3} >
+                    {/* Cards centralizados */}
+                    <Grid
+                        container
+                        spacing={4}
+                        justifyContent="center"
+                        alignItems="center"
+                        marginTop={3}
+                    >
 
                         {/** Card HealthSync */}
                         <Grid item xs={12} sm={6} md={4}
@@ -92,20 +98,21 @@ const Projects = () => {
                                     <CardMedia
                                         component="img"
                                         height="140"
-                                        image={soccerGameLogo}
+                                        image={mp}
                                         alt="Imagem do Projeto"
                                     />
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="div">
-                                            SoccerGame
+                                            DistribuidoraMp
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            Soccer Game is software where you can create matches, add players and view their statistics, as well as organize championships</Typography>
+                                            Soccer Game is software where you can do orders, organize your clients, 
+                                            make notes and save reports. This project was made for the company Distribuidora Miranda Pereira.</Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
-                                    <Button size="small" color="primary" href="https://github.com/ArlindoSPJr/SoccerGame" target="_blank">
-                                        Share (Em Andamento)
+                                    <Button size="small" color="primary" href="https://distribuidora-web.onrender.com/index.html" target="_blank">
+                                        Share 
                                     </Button>
                                 </CardActions>
                             </Card>

@@ -67,9 +67,10 @@ const About = () => {
                     </Box>
 
                     <Typography color="black" fontSize="20px" sx={{ textAlign: "justify" }} >
-                        Sou Arlindo, estudante de Engenharia de Software na PUC Minas, apaixonado por tecnologia
-                        e desenvolvimento de soluções criativas. Possuo experiência e conhecimento em
-                        Java, JavaScript, HTML, CSS, Spring Framework e Banco de dados, com um forte foco em criar aplicações eficientes e funcionais.
+
+                        I'm Arlindo, a Software Engineering student at PUC Minas, passionate about technology
+                        and developing creative solutions. I have experience and knowledge in
+                        Java, JavaScript, HTML, CSS, Spring Framework, and databases, with a strong focus on creating efficient and functional applications.
                     </Typography>
                     <Divider sx={{ width: '100%', margin: '10px auto', color: "black", background: "black" }} />
                     <Grid item xs={12} md={12} textAlign="center">
@@ -104,6 +105,9 @@ const About = () => {
                             </Box>
                             <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
                                 React
+                            </Box>
+                            <Box border="1px solid #aaaaaa" padding={2} width={120} height={50} display="flex" alignItems="center" justifyContent="center" fontSize="20px">
+                                Node.js
                             </Box>
                         </Grid>
                     </Grid>
