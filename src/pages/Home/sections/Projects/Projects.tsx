@@ -2,6 +2,7 @@ import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Cont
 import healthsync from "../../../../assets/images/healthsync.png";
 import spotifyLogo from "../../../../assets/images/spotifyLogo.jpg";
 import mp from "../../../../assets/images/mp.png";
+import encurtador from "../../../../assets/images/encurtador.png"
 
 const Projects = () => {
     const StyledProjects = styled("div")(({ theme }) => ({
@@ -40,7 +41,15 @@ const Projects = () => {
                         {/** Card HealthSync */}
                         <Grid item xs={12} sm={6} md={4}
                         >
-                            <Card sx={{ maxWidth: 345 }} >
+                            <Card
+                                sx={{
+                                    maxWidth: 345,
+                                    height: 400, // altura fixa
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "space-between"
+                                }}
+                            >
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
@@ -66,7 +75,15 @@ const Projects = () => {
 
                         {/** Card Spotify */}
                         <Grid item xs={12} sm={6} md={4}>
-                            <Card sx={{ maxWidth: 345 }}>
+                            <Card
+                                sx={{
+                                    maxWidth: 345,
+                                    height: 400, // altura fixa
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "space-between"
+                                }}
+                            >
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
@@ -91,9 +108,52 @@ const Projects = () => {
                             </Card>
                         </Grid>
 
+                        {/** Card Encurtador Url */}
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Card
+                                sx={{
+                                    maxWidth: 345,
+                                    height: 400, // altura fixa
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "space-between"
+                                }}
+                            >
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image={encurtador}
+                                        alt="Imagem do Projeto"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Url Shortener
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            My project is a URL shortening service that turns long addresses into short links, making them easier to share on social media, emails, and documents; in addition to saving visual space, it improves the user experience.
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                    <Button size="small" color="primary" href="https://encurtador-url-jr.netlify.app/" target="_blank">
+                                        Share
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+
                         {/** Card SoccerGame */}
                         <Grid item xs={12} sm={6} md={4}>
-                            <Card sx={{ maxWidth: 345 }}>
+                            <Card
+                                sx={{
+                                    maxWidth: 345,
+                                    height: 400, // altura fixa
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "space-between"
+                                }}
+                            >
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
@@ -106,13 +166,13 @@ const Projects = () => {
                                             DistribuidoraMp
                                         </Typography>
                                         <Typography variant="body2" color="text.secondary">
-                                            Soccer Game is software where you can do orders, organize your clients, 
+                                            Soccer Game is software where you can do orders, organize your clients,
                                             make notes and save reports. This project was made for the company Distribuidora Miranda Pereira.</Typography>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
                                     <Button size="small" color="primary" href="https://distribuidora-web.onrender.com/index.html" target="_blank">
-                                        Share 
+                                        Share
                                     </Button>
                                 </CardActions>
                             </Card>
